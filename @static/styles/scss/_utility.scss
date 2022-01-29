@@ -1,0 +1,13 @@
+.is-pc {
+  @include sp() {
+    display: none;
+  }
+}
+.is-sp {
+  @include pc() {
+    display: none;
+  }
+}
+.is-none {
+  display: none !important;
+}

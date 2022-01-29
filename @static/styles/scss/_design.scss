@@ -1,0 +1,267 @@
+.header {
+  &__link {
+    border-radius: 4px;
+    color: $secondary-color;
+    background: $primary-color;
+    box-shadow: 1px 1px 3px #602222;
+  }
+}
+.footer {
+  background: rgba(48, 47, 47, 0.847);
+  &__copy {
+    font-size: 14px;
+    color: ghostwhite;
+  }
+}
+.section {
+  &--primary {
+    background: $primary-color;
+  }
+  &--secondary {
+    background: $secondary-color;
+  }
+  &__header {
+    font-size: 24px;
+    @include pc() {
+      font-size: 28px;
+    }
+    font-weight: 500;
+    &--primary {
+      color: $primary-color;
+    }
+    &--secondary {
+      color: $secondary-color;
+    }
+  }
+}
+.view {
+  &__sub {
+    font-size: 16px;
+    @include pc() {
+      font-size: 20px;
+    }
+    font-weight: 900;
+    color: $primary-color;
+  }
+}
+.trouble {
+  &__card {
+    background: $secondary-color;
+    border-radius: 4px;
+    @include pc() {
+      border-radius: 50%;
+    }
+  }
+  &__icon {
+    &--improvement {
+      color: $primary-color;
+    }
+    &--saving {
+      color: $primary-color;
+    }
+    &--reduction {
+      color: $primary-color;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+  }
+}
+.service {
+  &__text {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+  }
+}
+.achievement {
+  &__text {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+    color: $secondary-color;
+  }
+}
+.plan {
+  &__desc {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+  }
+  &__desc-link {
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  &__table-body {
+    tr {
+      &:nth-child(even) {
+        background: rgb(233, 233, 233);
+      }
+    }
+  }
+  &__col {
+    border-left: 4px solid $secondary-color;
+    border-right: 4px solid $secondary-color;
+    color: $secondary-color;
+    &--basic {
+      background: #f5c554;
+    }
+    &--standard {
+      background: #eb5e60;
+    }
+    &--complete {
+      background: #a52f57;
+    }
+  }
+  &__col-header {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+    font-weight: 500;
+  }
+  &__col-footer {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+    font-weight: 500;
+  }
+  &__row-header {
+    font-weight: 600;
+  }
+  &__link {
+    font-size: 16px;
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+    background: $primary-color;
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+      background: $secondary-color;
+    }
+  }
+}
+.workflow {
+  &__card {
+    border-radius: 4px;
+    background: $secondary-color;
+  }
+  &__title {
+    font-size: 20px;
+    font-family: $baloo;
+    color: $primary-color;
+  }
+  &__text {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+  }
+}
+.faq {
+  &__pair {
+    font-size: 16px;
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+  }
+  &__text {
+    &--question {
+      background: $primary-color;
+      color: $secondary-color;
+    }
+  }
+}
+.delegate {
+  &__img {
+    border-radius: 4px 4px 0 0;
+    @include pc() {
+      border-radius: 4px 0 0 4px;
+    }
+  }
+  &__text {
+    background: $secondary-color;
+    border-radius: 0 0 4px 4px;
+    @include pc() {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  &__name {
+    font-size: 20px;
+    border-bottom: 4px solid $primary-color;
+  }
+  &__profile {
+    font-size: 16px;
+  }
+}
+.contact {
+  &__textbox {
+    border: 2px solid rgba(211, 211, 211, 0.958);
+    background: rgba(240, 236, 236, 0.993);
+    border-radius: 4px;
+  }
+  &__textarea {
+    border: 2px solid rgba(211, 211, 211, 0.958);
+    background: rgba(240, 236, 236, 0.993);
+    border-radius: 4px;
+  }
+  &__select {
+    border: 2px solid rgba(211, 211, 211, 0.958);
+    background: rgba(240, 236, 236, 0.993)
+      url("#{$static}/images/arrow_drop_down_black.svg") no-repeat right 10px
+      center / 24px;
+    border-radius: 4px;
+  }
+  &__label {
+    user-select: none;
+  }
+  &__ref {
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  &__submit {
+    font-size: 16px;
+    border: 2px solid $primary-color;
+    color: $secondary-color;
+    background: $primary-color;
+    border-radius: 4px;
+    &:hover {
+      color: $primary-color;
+      background: $secondary-color;
+    }
+  }
+}
+.discount {
+  background: $secondary-color;
+}
+.privacy {
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}
+.law {
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}
+.thanks {
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+  &__ref {
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+  }
+}
