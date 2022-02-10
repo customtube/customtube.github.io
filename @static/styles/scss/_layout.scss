@@ -56,8 +56,10 @@
 .section {
   &__header {
     position: relative;
-    padding: 16px 0 32px;
-    margin: 0 0 24px;
+    padding: 28px 0 32px;
+    @include pc() {
+      padding: 72px 0 96px;
+    }
     text-align: center;
   }
 }
@@ -110,20 +112,20 @@
     flex-wrap: wrap;
     justify-content: center;
     @include pc() {
-      justify-content: space-between;
+      justify-content: center;
     }
     padding: 24px 0 16px;
     @include pc() {
-      padding: 48px 0;
+      padding: 0 0 72px;
     }
   }
   &__card {
     width: 100%;
     padding: 16px 0;
-    margin: 8px 0;
+    margin: 8px 24px;
     @include pc() {
-      width: 280px;
-      height: 280px;
+      width: 240px;
+      height: 240px;
       padding: 24px 0;
     }
   }
@@ -135,19 +137,14 @@
     @include pc() {
       width: 30%;
     }
+    padding: 16px 0 0;
     margin: 0 auto;
-  }
-  &__icon {
-    font-size: 64px;
-    @include pc() {
-      font-size: 96px;
-    }
   }
   &__text-wrapper {
     padding: 0 4px;
     margin: 12px 0 0;
     @include pc() {
-      margin: 48px 0 0;
+      margin: 12px 0 0;
     }
     text-align: center;
   }
@@ -155,11 +152,9 @@
 .service {
   &__video-wrapper {
     width: 100%;
-    padding: 24px 0 16px;
     margin: 0;
     @include pc() {
       width: 80%;
-      padding: 48px 0 32px;
       margin: 0 auto;
     }
   }
@@ -167,9 +162,9 @@
     width: 100%;
   }
   &__text {
-    padding: 0 0 24px;
+    padding: 16px 0 24px;
     @include pc() {
-      padding: 0 0 48px;
+      padding: 36px 0 72px;
     }
     text-align: center;
   }
@@ -177,10 +172,6 @@
 .achievement {
   &__video-wrapper {
     width: 100%;
-    padding: 24px 0 16px;
-    @include pc() {
-      padding: 48px 0 32px;
-    }
   }
   &__video {
     width: 100%;
@@ -191,7 +182,7 @@
     justify-content: space-around;
     padding: 0 0 8px;
     @include pc() {
-      padding: 0 0 48px;
+      padding: 36px 0 72px;
     }
   }
   &__link {
@@ -218,31 +209,24 @@
 }
 .plan {
   &__desc-wrapper {
-    padding: 24px 0 16px;
-    @include pc() {
-      padding: 48px 0 32px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  &__desc {
-    display: block;
-    text-align: center;
+  &__desc-link {
+    padding: 8px;
+    margin: 0 0 0 8px;
   }
   &__table-wrapper {
     display: flex;
     justify-content: center;
-    padding: 0 0 16px;
+    padding: 16px 0;
     @include pc() {
-      padding: 0 0 32px;
+      padding: 36px 0;
     }
   }
   &__table {
     width: 100%;
-    tbody {
-      td {
-        text-align: center;
-        vertical-align: middle;
-      }
-    }
   }
   &__col {
     text-align: center;
@@ -256,15 +240,20 @@
   }
   &__row-header {
     width: 40%;
-    padding: 8px 4px;
+    padding: 16px 0;
+    text-align: center;
+  }
+  &__data {
+    text-align: center;
+    vertical-align: middle;
   }
   &__row-dummy-header {
     height: 40px;
   }
   &__link-wrapper {
-    padding: 0 0 48px;
+    padding: 0 0 36px;
     @include pc() {
-      padding: 0 0 32px;
+      padding: 0 0 72px;
     }
   }
   &__link {
@@ -316,9 +305,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 24px 0 16px;
+    padding: 0 0 32px;
     @include pc() {
-      padding: 48px 0;
+      padding: 0 0 72px;
     }
   }
   &__pair {
@@ -336,15 +325,15 @@
   &__card {
     display: flex;
     flex-wrap: wrap;
-    padding: 24px 0;
+    padding: 0 0 32px;
     @include pc() {
-      padding: 48px 0;
+      padding: 0 0 72px;
     }
   }
   &__img-wrapper {
     width: 100%;
     @include pc() {
-      width: 50%;
+      width: 55%;
     }
     text-align: center;
   }
@@ -354,7 +343,7 @@
   &__text {
     width: 100%;
     @include pc() {
-      width: 50%;
+      width: 45%;
     }
     padding: 16px 4px;
   }
@@ -373,7 +362,7 @@
   &__form {
     padding: 24px 0;
     @include pc() {
-      padding: 48px 0;
+      padding: 0 0 72px;
     }
   }
   &__form-item {
@@ -430,7 +419,7 @@
 .discount {
   padding: 0 0 24px;
   @include pc() {
-    padding: 0 0 48px;
+    padding: 48px 0;
   }
   &__img-wrapper {
     width: 100%;

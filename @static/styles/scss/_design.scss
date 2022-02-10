@@ -17,15 +17,39 @@
   &--primary {
     background: $primary-color;
   }
+  &--sub-primary {
+    background: $primary-color;
+  }
   &--secondary {
     background: $secondary-color;
+  }
+  &--sub-secondary {
+    background: #fff;
+  }
+  &--primary-stripe {
+    background: url("../../images/bg_primary-stripe.jpg") no-repeat left
+      top/cover;
+  }
+  &--secondary-stripe {
+    background: url("../../images/bg_secondary-stripe.jpg") no-repeat left
+      top/cover;
+  }
+  &--working-image {
+    background: rgba(255, 255, 255, 0.65) url("../../images/bg_working.jpg")
+      no-repeat left top/cover;
+    background-blend-mode: lighten;
+  }
+  &--question-image {
+    background: rgba(255, 255, 255, 0.8) url("../../images/bg_question.jpg")
+      no-repeat left top/cover;
+    background-blend-mode: lighten;
   }
   &__header {
     font-size: 24px;
     @include pc() {
-      font-size: 28px;
+      font-size: 36px;
     }
-    font-weight: 500;
+    font-weight: 900;
     &--primary {
       color: $primary-color;
     }
@@ -38,13 +62,29 @@
   &__sub {
     font-size: 16px;
     @include pc() {
-      font-size: 20px;
+      font-size: 28px;
     }
     font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.2em;
     color: $primary-color;
   }
 }
 .trouble {
+  &__header {
+    font-size: 24px;
+    @include pc() {
+      font-size: 64px;
+    }
+    font-weight: 900;
+  }
+  &__header-large {
+    font-size: 32px;
+    @include pc() {
+      font-size: 72px;
+    }
+    color: #ffe803;
+  }
   &__card {
     background: $secondary-color;
     border-radius: 4px;
@@ -53,6 +93,10 @@
     }
   }
   &__icon {
+    font-size: 64px;
+    @include pc() {
+      font-size: 96px;
+    }
     &--improvement {
       color: $primary-color;
     }
@@ -66,15 +110,25 @@
   &__text {
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 20px;
+    }
+    font-weight: 900;
+    color: #0d0d0d;
+  }
+  &__text-large {
+    font-size: 20px;
+    @include pc() {
+      font-size: 24px;
     }
   }
 }
 .service {
   &__text {
+    letter-spacing: 1px;
+    line-height: 1.6em;
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 22px;
     }
   }
 }
@@ -82,7 +136,7 @@
   &__text {
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 22px;
     }
     color: $secondary-color;
   }
@@ -91,17 +145,33 @@
   &__desc {
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 22px;
     }
   }
   &__desc-link {
-    border-bottom: 1px solid $primary-color;
-    color: $primary-color;
+    font-size: 14px;
+    @include pc() {
+      font-size: 16px;
+    }
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+    color: $secondary-color;
+    background: $primary-color;
+    &:hover {
+      color: $primary-color;
+      background: $secondary-color;
+    }
   }
   &__table-body {
     tr {
+      &:nth-child(odd) {
+        background: #fff;
+      }
       &:nth-child(even) {
         background: rgb(233, 233, 233);
+      }
+      &:last-child {
+        background: none;
       }
     }
   }
@@ -110,34 +180,52 @@
     border-right: 4px solid $secondary-color;
     color: $secondary-color;
     &--basic {
-      background: #f5c554;
+      background: #91a2b4;
     }
     &--standard {
-      background: #eb5e60;
+      background: #d7b36c;
     }
     &--complete {
-      background: #a52f57;
+      background: #d65c60;
     }
   }
   &__col-header {
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 20px;
     }
-    font-weight: 500;
   }
   &__col-footer {
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 20px;
     }
-    font-weight: 500;
   }
   &__row-header {
-    font-weight: 600;
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+  }
+  &__data-check {
+    background-size: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &--blue {
+      background-image: url("../../images/check_blue.png");
+    }
+    &--yellow {
+      background-image: url("../../images/check_yellow.png");
+    }
+    &--red {
+      background-image: url("../../images/check_red.png");
+    }
   }
   &__link {
     font-size: 16px;
+    @include pc() {
+      font-size: 20px;
+    }
     border: 2px solid $primary-color;
     border-radius: 4px;
     background: $primary-color;
@@ -168,6 +256,9 @@
 .faq {
   &__pair {
     font-size: 16px;
+    @include pc() {
+      font-size: 20px;
+    }
     border: 2px solid $primary-color;
     border-radius: 4px;
   }
@@ -194,13 +285,25 @@
   }
   &__name {
     font-size: 20px;
+    @include pc() {
+      font-size: 24px;
+    }
     border-bottom: 4px solid $primary-color;
   }
   &__profile {
     font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
   }
 }
 .contact {
+  &__form-item {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
+  }
   &__textbox {
     border: 2px solid rgba(211, 211, 211, 0.958);
     background: rgba(240, 236, 236, 0.993);
@@ -219,6 +322,10 @@
     border-radius: 4px;
   }
   &__label {
+    font-size: 16px;
+    @include pc() {
+      font-size: 18px;
+    }
     user-select: none;
   }
   &__ref {
@@ -227,6 +334,9 @@
   }
   &__submit {
     font-size: 16px;
+    @include pc() {
+      font-size: 20px;
+    }
     border: 2px solid $primary-color;
     color: $secondary-color;
     background: $primary-color;
