@@ -30,6 +30,10 @@
     background: url("../../images/bg_primary-stripe.jpg") no-repeat left
       top/cover;
   }
+  &--sub-primary-stripe {
+    background: url("../../images/bg_sub-primary-stripe.jpg") no-repeat left
+      top/cover;
+  }
   &--secondary-stripe {
     background: url("../../images/bg_secondary-stripe.jpg") no-repeat left
       top/cover;
@@ -110,7 +114,7 @@
   &__text {
     font-size: 16px;
     @include pc() {
-      font-size: 20px;
+      font-size: 26px;
     }
     font-weight: 900;
     color: #0d0d0d;
@@ -121,15 +125,35 @@
       font-size: 24px;
     }
   }
+  &__catch-text {
+    font-size: 24px;
+    @include pc() {
+      font-size: 48px;
+    }
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1.2em;
+    color: $secondary-color;
+  }
+  &__catch-small {
+    font-size: 20px;
+    @include pc() {
+      font-size: 40px;
+    }
+  }
 }
 .service {
+  &__heading {
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
   &__text {
-    letter-spacing: 1px;
-    line-height: 1.6em;
     font-size: 16px;
     @include pc() {
       font-size: 22px;
     }
+    letter-spacing: 1px;
+    line-height: 1.6em;
   }
 }
 .achievement {
@@ -238,18 +262,55 @@
 }
 .workflow {
   &__card {
+    box-shadow: 1px 1px 3px #602222;
+  }
+  &__card-header {
+    border-radius: 4px 4px 0 0;
+    background: #fed5cf;
+  }
+  &__card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+  &__card-body {
+    border-radius: 0 0 4px 4px;
+    background: $secondary-color;
+  }
+  &__card-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: $primary-color;
+  }
+  &__divider {
+    border-top: 4px dotted $secondary-color;
+  }
+  &__panel {
     border-radius: 4px;
     background: $secondary-color;
   }
-  &__title {
+  &__panel-heading {
     font-size: 20px;
-    font-family: $baloo;
-    color: $primary-color;
+    @include pc() {
+      font-size: 28px;
+    }
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
+    color: $secondary-color;
+    background: $primary-color;
   }
-  &__text {
+  &__panel-title {
+    font-size: 22px;
+    @include pc() {
+      font-size: 36px;
+    }
+    font-weight: 600;
+  }
+  &__panel-text {
     font-size: 16px;
     @include pc() {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 }
@@ -266,6 +327,9 @@
     &--question {
       background: $primary-color;
       color: $secondary-color;
+    }
+    &--answer {
+      background: $secondary-color;
     }
   }
 }

@@ -48,13 +48,13 @@ dt {
 
 @media screen and (max-width: 1023px) {
   .is-pc {
-    display: none;
+    display: none !important;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .is-sp {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -229,7 +229,6 @@ dt {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 24px 0 16px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -240,16 +239,10 @@ dt {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .trouble__cards {
-    padding: 0 0 72px;
-  }
-}
-
 .trouble__card {
   width: 100%;
-  padding: 16px 0;
-  margin: 8px 24px;
+  padding: 8px 0;
+  margin: 0 auto 16px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -257,6 +250,7 @@ dt {
     width: 240px;
     height: 240px;
     padding: 24px 0;
+    margin: 8px 24px;
   }
 }
 
@@ -271,13 +265,13 @@ dt {
       -ms-flex-pack: center;
           justify-content: center;
   width: 26%;
-  padding: 16px 0 0;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
   .trouble__icon-wrapper {
     width: 30%;
+    padding: 16px 0 0;
   }
 }
 
@@ -291,6 +285,27 @@ dt {
   .trouble__text-wrapper {
     margin: 12px 0 0;
   }
+}
+
+.trouble__catch {
+  padding: 28px 0 36px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .trouble__catch {
+    padding: 64px 0 72px;
+  }
+}
+
+.trouble__catch-small {
+  padding: 0 0 0 8px;
+}
+
+.service__heading {
+  width: 90%;
+  padding: 16px;
+  margin: 0 auto;
 }
 
 .service__video-wrapper {
@@ -310,7 +325,7 @@ dt {
 }
 
 .service__text {
-  padding: 16px 0 24px;
+  padding: 16px 0 48px;
   text-align: center;
 }
 
@@ -428,8 +443,14 @@ dt {
 
 .plan__row-header {
   width: 40%;
-  padding: 16px 0;
-  text-align: center;
+  padding: 8px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__row-header {
+    padding: 16px 0;
+    text-align: center;
+  }
 }
 
 .plan__data {
@@ -474,44 +495,90 @@ dt {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 24px 0 16px;
-}
-
-@media screen and (min-width: 1024px) {
-  .workflow__cards {
-    padding: 48px 0;
-  }
+  padding: 0 0 72px;
 }
 
 .workflow__card {
-  width: 100%;
   position: relative;
-  padding: 12px 8px 16px;
-  margin: 8px 0;
+  width: 18%;
+  margin: 0;
+}
+
+.workflow__card-header {
+  padding: 8px;
+}
+
+.workflow__card-title {
+  display: block;
+  text-align: center;
+}
+
+.workflow__card-body {
+  padding: 24px 0;
+}
+
+.workflow__image-wrapper {
+  width: 40%;
+  margin: 0 auto 12px;
+}
+
+.workflow__image {
+  width: 100%;
+}
+
+.workflow__card-text {
+  display: block;
+  text-align: center;
+}
+
+.workflow__panels {
+  padding: 0 0 48px;
 }
 
 @media screen and (min-width: 1024px) {
-  .workflow__card {
-    width: 18%;
-    padding: 16px 8px 48px;
-    margin: 0;
+  .workflow__panels {
+    padding: 56px 0 72px;
   }
 }
 
-.workflow__title {
-  display: block;
+.workflow__panel {
+  height: auto;
+  padding: 12px;
+  margin: 0 0 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .workflow__panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+    margin: 0 0 32px;
+  }
+}
+
+.workflow__panel:last-child {
+  margin: 0;
+}
+
+.workflow__panel-header {
   margin: 0 0 8px;
 }
 
 @media screen and (min-width: 1024px) {
-  .workflow__title {
-    margin: 0 0 40px;
+  .workflow__panel-header {
+    margin: 0 8px 0 0;
   }
 }
 
-.workflow__text {
+.workflow__panel-heading {
   display: block;
-  text-align: center;
+  padding: 8px 12px;
+}
+
+.workflow__panel-title {
+  display: block;
+  margin: 4px 0 8px;
 }
 
 .faq__list {
@@ -523,7 +590,7 @@ dt {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 0 32px;
+  padding: 0 0 48px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -553,7 +620,7 @@ dt {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 0 32px;
+  padding: 0 0 48px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -601,7 +668,7 @@ dt {
 }
 
 .contact__form {
-  padding: 24px 0;
+  padding: 24px 0 48px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -684,7 +751,7 @@ dt {
 }
 
 .discount {
-  padding: 0 0 24px;
+  padding: 32px 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -812,6 +879,10 @@ dt {
   background: url("../../images/bg_primary-stripe.jpg") no-repeat left top/cover;
 }
 
+.section--sub-primary-stripe {
+  background: url("../../images/bg_sub-primary-stripe.jpg") no-repeat left top/cover;
+}
+
 .section--secondary-stripe {
   background: url("../../images/bg_secondary-stripe.jpg") no-repeat left top/cover;
 }
@@ -922,7 +993,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .trouble__text {
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 
@@ -936,10 +1007,39 @@ dt {
   }
 }
 
+.trouble__catch-text {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  color: rgba(245, 245, 245, 0.951);
+}
+
+@media screen and (min-width: 1024px) {
+  .trouble__catch-text {
+    font-size: 48px;
+  }
+}
+
+.trouble__catch-small {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .trouble__catch-small {
+    font-size: 40px;
+  }
+}
+
+.service__heading {
+  color: rgba(245, 245, 245, 0.951);
+  background-color: #b33e3e;
+}
+
 .service__text {
+  font-size: 16px;
   letter-spacing: 1px;
   line-height: 1.6em;
-  font-size: 16px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1086,23 +1186,75 @@ dt {
 }
 
 .workflow__card {
+  -webkit-box-shadow: 1px 1px 3px #602222;
+          box-shadow: 1px 1px 3px #602222;
+}
+
+.workflow__card-header {
+  border-radius: 4px 4px 0 0;
+  background: #fed5cf;
+}
+
+.workflow__card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #b33e3e;
+}
+
+.workflow__card-body {
+  border-radius: 0 0 4px 4px;
+  background: rgba(245, 245, 245, 0.951);
+}
+
+.workflow__card-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #b33e3e;
+}
+
+.workflow__divider {
+  border-top: 4px dotted rgba(245, 245, 245, 0.951);
+}
+
+.workflow__panel {
   border-radius: 4px;
   background: rgba(245, 245, 245, 0.951);
 }
 
-.workflow__title {
+.workflow__panel-heading {
   font-size: 20px;
-  font-family: "Baloo Bhaijaan 2", cursive;
-  color: #b33e3e;
+  font-weight: 600;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
+          box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
+  color: rgba(245, 245, 245, 0.951);
+  background: #b33e3e;
 }
 
-.workflow__text {
+@media screen and (min-width: 1024px) {
+  .workflow__panel-heading {
+    font-size: 28px;
+  }
+}
+
+.workflow__panel-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+  .workflow__panel-title {
+    font-size: 36px;
+  }
+}
+
+.workflow__panel-text {
   font-size: 16px;
 }
 
 @media screen and (min-width: 1024px) {
-  .workflow__text {
-    font-size: 18px;
+  .workflow__panel-text {
+    font-size: 20px;
   }
 }
 
@@ -1121,6 +1273,10 @@ dt {
 .faq__text--question {
   background: #b33e3e;
   color: rgba(245, 245, 245, 0.951);
+}
+
+.faq__text--answer {
+  background: rgba(245, 245, 245, 0.951);
 }
 
 .delegate__img {
@@ -1282,15 +1438,15 @@ dt {
   position: absolute;
   top: 0;
   left: 18%;
-  border-width: 12px 16px;
+  border-width: 20px 15px;
   border-color: #b33e3e transparent transparent transparent;
 }
 
 @media screen and (min-width: 1024px) {
   .workflow__card:not(:first-child)::before {
-    top: 46%;
-    left: 0;
-    border-color: transparent transparent transparent #b33e3e;
+    top: 42%;
+    left: -11%;
+    border-color: transparent transparent transparent #fed5cf;
   }
 }
 

@@ -114,19 +114,16 @@
     @include pc() {
       justify-content: center;
     }
-    padding: 24px 0 16px;
-    @include pc() {
-      padding: 0 0 72px;
-    }
   }
   &__card {
     width: 100%;
-    padding: 16px 0;
-    margin: 8px 24px;
+    padding: 8px 0;
+    margin: 0 auto 16px;
     @include pc() {
       width: 240px;
       height: 240px;
       padding: 24px 0;
+      margin: 8px 24px;
     }
   }
   &__icon-wrapper {
@@ -136,8 +133,8 @@
     width: 26%;
     @include pc() {
       width: 30%;
+      padding: 16px 0 0;
     }
-    padding: 16px 0 0;
     margin: 0 auto;
   }
   &__text-wrapper {
@@ -148,8 +145,23 @@
     }
     text-align: center;
   }
+  &__catch {
+    padding: 28px 0 36px;
+    @include pc() {
+      padding: 64px 0 72px;
+    }
+    text-align: center;
+  }
+  &__catch-small {
+    padding: 0 0 0 8px;
+  }
 }
 .service {
+  &__heading {
+    width: 90%;
+    padding: 16px;
+    margin: 0 auto;
+  }
   &__video-wrapper {
     width: 100%;
     margin: 0;
@@ -162,7 +174,7 @@
     width: 100%;
   }
   &__text {
-    padding: 16px 0 24px;
+    padding: 16px 0 48px;
     @include pc() {
       padding: 36px 0 72px;
     }
@@ -240,8 +252,11 @@
   }
   &__row-header {
     width: 40%;
-    padding: 16px 0;
-    text-align: center;
+    padding: 8px 0;
+    @include pc() {
+      padding: 16px 0;
+      text-align: center;
+    }
   }
   &__data {
     text-align: center;
@@ -272,32 +287,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 24px 0 16px;
-    @include pc() {
-      padding: 48px 0;
-    }
+    padding: 0 0 72px;
   }
   &__card {
-    width: 100%;
     position: relative;
-    padding: 12px 8px 16px;
-    margin: 8px 0;
+    width: 18%;
+    margin: 0;
+  }
+  &__card-header {
+    padding: 8px;
+  }
+  &__card-title {
+    display: block;
+    text-align: center;
+  }
+  &__card-body {
+    padding: 24px 0;
+  }
+  &__image-wrapper {
+    width: 40%;
+    margin: 0 auto 12px;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__card-text {
+    display: block;
+    text-align: center;
+  }
+  &__panels {
+    padding: 0 0 48px;
     @include pc() {
-      width: 18%;
-      padding: 16px 8px 48px;
+      padding: 56px 0 72px;
+    }
+  }
+  &__panel {
+    height: auto;
+    padding: 12px;
+    margin: 0 0 16px;
+    @include pc() {
+      display: flex;
+      height: 200px;
+      margin: 0 0 32px;
+    }
+    &:last-child {
       margin: 0;
     }
   }
-  &__title {
-    display: block;
+  &__panel-header {
     margin: 0 0 8px;
     @include pc() {
-      margin: 0 0 40px;
+      margin: 0 8px 0 0;
     }
   }
-  &__text {
+  &__panel-heading {
     display: block;
-    text-align: center;
+    padding: 8px 12px;
+  }
+  &__panel-title {
+    display: block;
+    margin: 4px 0 8px;
   }
 }
 .faq {
@@ -305,7 +354,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 0 32px;
+    padding: 0 0 48px;
     @include pc() {
       padding: 0 0 72px;
     }
@@ -325,7 +374,7 @@
   &__card {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 32px;
+    padding: 0 0 48px;
     @include pc() {
       padding: 0 0 72px;
     }
@@ -360,7 +409,7 @@
 }
 .contact {
   &__form {
-    padding: 24px 0;
+    padding: 24px 0 48px;
     @include pc() {
       padding: 0 0 72px;
     }
@@ -417,7 +466,7 @@
   }
 }
 .discount {
-  padding: 0 0 24px;
+  padding: 32px 0;
   @include pc() {
     padding: 48px 0;
   }

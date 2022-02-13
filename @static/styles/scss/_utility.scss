@@ -1,11 +1,11 @@
 .is-pc {
   @include sp() {
-    display: none;
+    display: none !important;
   }
 }
 .is-sp {
   @include pc() {
-    display: none;
+    display: none !important;
   }
 }
 .is-none {

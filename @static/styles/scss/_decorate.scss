@@ -58,12 +58,12 @@
         position: absolute;
         top: 0;
         left: 18%;
-        border-width: 12px 16px;
+        border-width: 20px 15px;
         border-color: $primary-color transparent transparent transparent;
         @include pc() {
-          top: 46%;
-          left: 0;
-          border-color: transparent transparent transparent $primary-color;
+          top: 42%;
+          left: -11%;
+          border-color: transparent transparent transparent #fed5cf;
         }
       }
     }
