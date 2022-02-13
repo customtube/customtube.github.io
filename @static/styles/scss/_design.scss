@@ -30,10 +30,6 @@
     background: url("../../images/bg_primary-stripe.jpg") no-repeat left
       top/cover;
   }
-  &--sub-primary-stripe {
-    background: url("../../images/bg_sub-primary-stripe.jpg") no-repeat left
-      top/cover;
-  }
   &--secondary-stripe {
     background: url("../../images/bg_secondary-stripe.jpg") no-repeat left
       top/cover;
@@ -122,7 +118,7 @@
   &__text-large {
     font-size: 20px;
     @include pc() {
-      font-size: 24px;
+      font-size: 28px;
     }
   }
   &__catch-text {

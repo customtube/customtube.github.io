@@ -23,33 +23,6 @@
     }
   }
 }
-.section {
-  // &__header {
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     left: 50%;
-  //     bottom: 0;
-  //     transform: translateX(-50%) rotate(-90deg);
-  //     width: 0;
-  //     height: 0;
-  //     border-style: solid;
-  //     border-width: 12px 8px 0 8px;
-  //   }
-  //   &--primary {
-  //     &::after {
-  //       border-color: $primary-color rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
-  //         rgba(0, 0, 0, 0);
-  //     }
-  //   }
-  //   &--secondary {
-  //     &::after {
-  //       border-color: $secondary-color rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
-  //         rgba(0, 0, 0, 0);
-  //     }
-  //   }
-  // }
-}
 .workflow {
   &__card {
     &:not(:first-child) {

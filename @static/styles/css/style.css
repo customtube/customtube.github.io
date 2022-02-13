@@ -578,7 +578,7 @@ dt {
 
 .workflow__panel-title {
   display: block;
-  margin: 4px 0 8px;
+  margin: 4px 0 16px;
 }
 
 .faq__list {
@@ -879,10 +879,6 @@ dt {
   background: url("../../images/bg_primary-stripe.jpg") no-repeat left top/cover;
 }
 
-.section--sub-primary-stripe {
-  background: url("../../images/bg_sub-primary-stripe.jpg") no-repeat left top/cover;
-}
-
 .section--secondary-stripe {
   background: url("../../images/bg_secondary-stripe.jpg") no-repeat left top/cover;
 }
@@ -1003,7 +999,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .trouble__text-large {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
