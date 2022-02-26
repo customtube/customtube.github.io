@@ -226,6 +226,7 @@
     @include pc() {
       font-size: 18px;
     }
+    font-weight: 900;
   }
   &__data-check {
     background-size: 32px;
@@ -316,15 +317,29 @@
     @include pc() {
       font-size: 20px;
     }
-    border: 2px solid $primary-color;
-    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
   }
   &__text {
     &--question {
+      border-radius: 4px 4px 0 0;
       background: $primary-color;
       color: $secondary-color;
+      &::before {
+        content: "";
+        display: block;
+        min-width: 32px;
+        min-height: 32px;
+        @include pc() {
+          min-width: 48px;
+          min-height: 48px;
+        }
+        margin: 0 8px 0 0;
+        background: url("../../images/question.png") no-repeat center
+          center/contain;
+      }
     }
     &--answer {
+      border-radius: 0 0 4px 4px;
       background: $secondary-color;
     }
   }
@@ -348,12 +363,37 @@
     @include pc() {
       font-size: 24px;
     }
-    border-bottom: 4px solid $primary-color;
+    border-bottom: 4px dotted #000;
   }
   &__profile {
     font-size: 16px;
     @include pc() {
       font-size: 18px;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    @include pc() {
+      font-size: 20px;
+    }
+    color: $primary-color;
+    &::before {
+      content: "";
+      min-width: 32px;
+      min-height: 32px;
+      margin: 0 8px 0 0;
+    }
+    &--youtube {
+      &::before {
+        background: url("../../images/sns_youtube.png") no-repeat center
+          center/contain;
+      }
+    }
+    &--twitter {
+      &::before {
+        background: url("../../images/sns_twitter.png") no-repeat center
+          center/contain;
+      }
     }
   }
 }
@@ -406,9 +446,6 @@
       background: $secondary-color;
     }
   }
-}
-.discount {
-  background: $secondary-color;
 }
 .privacy {
   &__title {

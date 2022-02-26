@@ -351,7 +351,7 @@ dt {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 0 8px;
+  padding: 16px 0 32px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -405,7 +405,6 @@ dt {
 
 .plan__desc-link {
   padding: 8px;
-  margin: 0 0 0 8px;
 }
 
 .plan__table-wrapper {
@@ -434,7 +433,7 @@ dt {
 
 .plan__col-header {
   width: 20%;
-  padding: 8px 12px 24px;
+  padding: 16px 12px;
 }
 
 .plan__col-footer {
@@ -443,13 +442,12 @@ dt {
 
 .plan__row-header {
   width: 40%;
-  padding: 8px 0;
+  padding: 8px;
 }
 
 @media screen and (min-width: 1024px) {
   .plan__row-header {
-    padding: 16px 0;
-    text-align: center;
+    padding: 16px 8px;
   }
 }
 
@@ -463,12 +461,12 @@ dt {
 }
 
 .plan__link-wrapper {
-  padding: 0 0 36px;
+  padding: 0 0 16px;
 }
 
 @media screen and (min-width: 1024px) {
   .plan__link-wrapper {
-    padding: 0 0 72px;
+    padding: 0 0 36px;
   }
 }
 
@@ -484,6 +482,21 @@ dt {
   .plan__link {
     width: 50%;
   }
+}
+
+.plan__img-wrapper {
+  width: 100%;
+  padding: 0 0 36px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__img-wrapper {
+    padding: 0 0 72px;
+  }
+}
+
+.plan__img {
+  width: 100%;
 }
 
 .workflow__cards {
@@ -581,15 +594,13 @@ dt {
   margin: 4px 0 16px;
 }
 
+@media screen and (min-width: 1024px) {
+  .workflow__panel-title {
+    margin: 4px 0 24px;
+  }
+}
+
 .faq__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 0 0 48px;
 }
 
@@ -601,17 +612,33 @@ dt {
 
 .faq__pair {
   width: 100%;
-  margin: 8px 0;
+  margin: 16px 0;
 }
 
 @media screen and (min-width: 1024px) {
   .faq__pair {
-    width: 49%;
+    margin: 32px 0;
   }
 }
 
-.faq__text {
+.faq__text--question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12px 8px;
+}
+
+.faq__text--answer {
+  padding: 12px 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq__text--answer {
+    padding: 16px 12px;
+  }
 }
 
 .delegate__card {
@@ -636,12 +663,15 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .delegate__img-wrapper {
-    width: 55%;
+    width: 50%;
   }
 }
 
 .delegate__img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .delegate__text {
@@ -651,20 +681,41 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .delegate__text {
-    width: 45%;
+    width: 50%;
   }
 }
 
 .delegate__name {
   display: block;
-  padding: 0 0 12px;
-  margin: 0 4px 32px;
+  padding: 0 0 16px;
+  margin: 0 8px 16px;
   text-align: center;
 }
 
 .delegate__profile {
   padding: 0 24px 0;
+  margin: 0 0 16px;
   line-height: 1.5;
+}
+
+.delegate__link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.delegate__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact__form {
@@ -748,24 +799,6 @@ dt {
     padding: 16px 0;
     margin: 0 auto;
   }
-}
-
-.discount {
-  padding: 32px 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .discount {
-    padding: 48px 0;
-  }
-}
-
-.discount__img-wrapper {
-  width: 100%;
-}
-
-.discount__img {
-  width: 100%;
 }
 
 .privacy__header {
@@ -1136,6 +1169,7 @@ dt {
 
 .plan__row-header {
   font-size: 16px;
+  font-weight: 900;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1256,8 +1290,8 @@ dt {
 
 .faq__pair {
   font-size: 16px;
-  border: 2px solid #b33e3e;
-  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
+          box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
 }
 
 @media screen and (min-width: 1024px) {
@@ -1267,11 +1301,29 @@ dt {
 }
 
 .faq__text--question {
+  border-radius: 4px 4px 0 0;
   background: #b33e3e;
   color: rgba(245, 245, 245, 0.951);
 }
 
+.faq__text--question::before {
+  content: "";
+  display: block;
+  min-width: 32px;
+  min-height: 32px;
+  margin: 0 8px 0 0;
+  background: url("../../images/question.png") no-repeat center center/contain;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq__text--question::before {
+    min-width: 48px;
+    min-height: 48px;
+  }
+}
+
 .faq__text--answer {
+  border-radius: 0 0 4px 4px;
   background: rgba(245, 245, 245, 0.951);
 }
 
@@ -1298,7 +1350,7 @@ dt {
 
 .delegate__name {
   font-size: 20px;
-  border-bottom: 4px solid #b33e3e;
+  border-bottom: 4px dotted #000;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1315,6 +1367,32 @@ dt {
   .delegate__profile {
     font-size: 18px;
   }
+}
+
+.delegate__link {
+  font-size: 18px;
+  color: #b33e3e;
+}
+
+@media screen and (min-width: 1024px) {
+  .delegate__link {
+    font-size: 20px;
+  }
+}
+
+.delegate__link::before {
+  content: "";
+  min-width: 32px;
+  min-height: 32px;
+  margin: 0 8px 0 0;
+}
+
+.delegate__link--youtube::before {
+  background: url("../../images/sns_youtube.png") no-repeat center center/contain;
+}
+
+.delegate__link--twitter::before {
+  background: url("../../images/sns_twitter.png") no-repeat center center/contain;
 }
 
 .contact__form-item {
@@ -1380,10 +1458,6 @@ dt {
 
 .contact__submit:hover {
   color: #b33e3e;
-  background: rgba(245, 245, 245, 0.951);
-}
-
-.discount {
   background: rgba(245, 245, 245, 0.951);
 }
 
