@@ -226,14 +226,22 @@
     justify-content: center;
   }
   &__desc-link {
-    padding: 8px;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    @include pc() {
+      width: 50%;
+      padding: 16px 0;
+      margin: 0 auto;
+    }
+    text-align: center;
   }
   &__table-wrapper {
     display: flex;
     justify-content: center;
-    padding: 16px 0;
+    padding: 0 0 16px;
     @include pc() {
-      padding: 36px 0;
+      padding: 0 0 64px;
     }
   }
   &__table {
@@ -264,26 +272,26 @@
     height: 40px;
   }
   &__link-wrapper {
-    padding: 0 0 16px;
+    padding: 0 0 48px;
     @include pc() {
-      padding: 0 0 36px;
+      padding: 0 0 72px;
     }
   }
   &__link {
     display: block;
     width: 100%;
     @include pc() {
-      width: 50%;
+      width: 80%;
     }
-    padding: 16px 0;
+    padding: 32px 0;
     margin: 0 auto;
     text-align: center;
   }
   &__img-wrapper {
     width: 100%;
-    padding: 0 0 36px;
+    padding: 24px 0;
     @include pc() {
-      padding: 0 0 72px;
+      padding: 64px 0;
     }
   }
   &__img {

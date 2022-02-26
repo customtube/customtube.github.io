@@ -162,16 +162,10 @@
   }
 }
 .plan {
-  &__desc {
+  &__desc-link {
     font-size: 16px;
     @include pc() {
       font-size: 22px;
-    }
-  }
-  &__desc-link {
-    font-size: 14px;
-    @include pc() {
-      font-size: 16px;
     }
     border: 2px solid $primary-color;
     border-radius: 4px;
@@ -245,8 +239,9 @@
   &__link {
     font-size: 16px;
     @include pc() {
-      font-size: 20px;
+      font-size: 32px;
     }
+    font-weight: 900;
     border: 2px solid $primary-color;
     border-radius: 4px;
     background: $primary-color;
@@ -436,7 +431,7 @@
   &__submit {
     font-size: 16px;
     @include pc() {
-      font-size: 20px;
+      font-size: 22px;
     }
     border: 2px solid $primary-color;
     color: $secondary-color;

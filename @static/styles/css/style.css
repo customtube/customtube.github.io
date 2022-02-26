@@ -404,7 +404,18 @@ dt {
 }
 
 .plan__desc-link {
-  padding: 8px;
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__desc-link {
+    width: 50%;
+    padding: 16px 0;
+    margin: 0 auto;
+  }
 }
 
 .plan__table-wrapper {
@@ -414,12 +425,12 @@ dt {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 16px 0;
+  padding: 0 0 16px;
 }
 
 @media screen and (min-width: 1024px) {
   .plan__table-wrapper {
-    padding: 36px 0;
+    padding: 0 0 64px;
   }
 }
 
@@ -461,37 +472,37 @@ dt {
 }
 
 .plan__link-wrapper {
-  padding: 0 0 16px;
+  padding: 0 0 48px;
 }
 
 @media screen and (min-width: 1024px) {
   .plan__link-wrapper {
-    padding: 0 0 36px;
+    padding: 0 0 72px;
   }
 }
 
 .plan__link {
   display: block;
   width: 100%;
-  padding: 16px 0;
+  padding: 32px 0;
   margin: 0 auto;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
   .plan__link {
-    width: 50%;
+    width: 80%;
   }
 }
 
 .plan__img-wrapper {
   width: 100%;
-  padding: 0 0 36px;
+  padding: 24px 0;
 }
 
 @media screen and (min-width: 1024px) {
   .plan__img-wrapper {
-    padding: 0 0 72px;
+    padding: 64px 0;
   }
 }
 
@@ -1088,18 +1099,8 @@ dt {
   }
 }
 
-.plan__desc {
-  font-size: 16px;
-}
-
-@media screen and (min-width: 1024px) {
-  .plan__desc {
-    font-size: 22px;
-  }
-}
-
 .plan__desc-link {
-  font-size: 14px;
+  font-size: 16px;
   border: 2px solid #b33e3e;
   border-radius: 4px;
   color: rgba(245, 245, 245, 0.951);
@@ -1108,7 +1109,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .plan__desc-link {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
@@ -1198,6 +1199,7 @@ dt {
 
 .plan__link {
   font-size: 16px;
+  font-weight: 900;
   border: 2px solid #b33e3e;
   border-radius: 4px;
   background: #b33e3e;
@@ -1206,7 +1208,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .plan__link {
-    font-size: 20px;
+    font-size: 32px;
   }
 }
 
@@ -1459,7 +1461,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .contact__submit {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
