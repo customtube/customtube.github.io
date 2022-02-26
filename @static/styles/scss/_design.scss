@@ -110,15 +110,16 @@
   &__text {
     font-size: 16px;
     @include pc() {
-      font-size: 26px;
+      font-size: 28px;
     }
     font-weight: 900;
+    line-height: 1.6em;
     color: #0d0d0d;
   }
   &__text-large {
     font-size: 20px;
     @include pc() {
-      font-size: 28px;
+      font-size: 36px;
     }
   }
   &__catch-text {
@@ -146,9 +147,10 @@
   &__text {
     font-size: 16px;
     @include pc() {
-      font-size: 22px;
+      font-size: 26px;
     }
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: -1px;
     line-height: 1.6em;
   }
 }
@@ -220,7 +222,7 @@
     @include pc() {
       font-size: 18px;
     }
-    font-weight: 900;
+    font-weight: 700;
   }
   &__data-check {
     background-size: 32px;
@@ -262,7 +264,7 @@
   }
   &__card-title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     color: $primary-color;
   }
   &__card-body {
@@ -271,7 +273,7 @@
   }
   &__card-text {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     color: $primary-color;
   }
   &__divider {
@@ -286,7 +288,7 @@
     @include pc() {
       font-size: 28px;
     }
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 4px;
     box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
     color: $secondary-color;
@@ -297,13 +299,14 @@
     @include pc() {
       font-size: 36px;
     }
-    font-weight: 600;
+    font-weight: 700;
   }
   &__panel-text {
     font-size: 16px;
     @include pc() {
       font-size: 20px;
     }
+    line-height: 1.5em;
   }
 }
 .faq {
@@ -316,6 +319,7 @@
   }
   &__text {
     &--question {
+      font-weight: 700;
       border-radius: 4px 4px 0 0;
       background: $primary-color;
       color: $secondary-color;
@@ -446,21 +450,21 @@
 .privacy {
   &__title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: $primary-color;
   }
 }
 .law {
   &__title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: $primary-color;
   }
 }
 .thanks {
   &__title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: $primary-color;
   }
   &__ref {

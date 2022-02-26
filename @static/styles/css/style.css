@@ -271,7 +271,6 @@ dt {
 @media screen and (min-width: 1024px) {
   .trouble__icon-wrapper {
     width: 30%;
-    padding: 16px 0 0;
   }
 }
 
@@ -283,7 +282,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .trouble__text-wrapper {
-    margin: 12px 0 0;
+    margin: 4px 0 0;
   }
 }
 
@@ -1028,12 +1027,13 @@ dt {
 .trouble__text {
   font-size: 16px;
   font-weight: 900;
+  line-height: 1.6em;
   color: #0d0d0d;
 }
 
 @media screen and (min-width: 1024px) {
   .trouble__text {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
@@ -1043,7 +1043,7 @@ dt {
 
 @media screen and (min-width: 1024px) {
   .trouble__text-large {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
@@ -1078,13 +1078,14 @@ dt {
 
 .service__text {
   font-size: 16px;
-  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: -1px;
   line-height: 1.6em;
 }
 
 @media screen and (min-width: 1024px) {
   .service__text {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
@@ -1170,7 +1171,7 @@ dt {
 
 .plan__row-header {
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1229,7 +1230,7 @@ dt {
 
 .workflow__card-title {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   color: #b33e3e;
 }
 
@@ -1240,7 +1241,7 @@ dt {
 
 .workflow__card-text {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   color: #b33e3e;
 }
 
@@ -1255,7 +1256,7 @@ dt {
 
 .workflow__panel-heading {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 4px;
   -webkit-box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
           box-shadow: 1px 1px 3px rgba(159, 158, 158, 0.771);
@@ -1271,7 +1272,7 @@ dt {
 
 .workflow__panel-title {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1282,6 +1283,7 @@ dt {
 
 .workflow__panel-text {
   font-size: 16px;
+  line-height: 1.5em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1303,6 +1305,7 @@ dt {
 }
 
 .faq__text--question {
+  font-weight: 700;
   border-radius: 4px 4px 0 0;
   background: #b33e3e;
   color: rgba(245, 245, 245, 0.951);
@@ -1472,19 +1475,19 @@ dt {
 
 .privacy__title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #b33e3e;
 }
 
 .law__title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #b33e3e;
 }
 
 .thanks__title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #b33e3e;
 }
 
