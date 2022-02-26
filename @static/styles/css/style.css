@@ -1371,7 +1371,6 @@ dt {
 
 .delegate__link {
   font-size: 18px;
-  color: #b33e3e;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1387,8 +1386,16 @@ dt {
   margin: 0 8px 0 0;
 }
 
+.delegate__link--youtube {
+  color: #b33e3e;
+}
+
 .delegate__link--youtube::before {
   background: url("../../images/sns_youtube.png") no-repeat center center/contain;
+}
+
+.delegate__link--twitter {
+  color: #00acee;
 }
 
 .delegate__link--twitter::before {

@@ -376,7 +376,6 @@
     @include pc() {
       font-size: 20px;
     }
-    color: $primary-color;
     &::before {
       content: "";
       min-width: 32px;
@@ -384,12 +383,14 @@
       margin: 0 8px 0 0;
     }
     &--youtube {
+      color: $primary-color;
       &::before {
         background: url("../../images/sns_youtube.png") no-repeat center
           center/contain;
       }
     }
     &--twitter {
+      color: #00acee;
       &::before {
         background: url("../../images/sns_twitter.png") no-repeat center
           center/contain;
